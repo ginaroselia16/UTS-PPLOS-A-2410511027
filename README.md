@@ -51,6 +51,8 @@ Gunakan Postman
 menambahkan refresh token dan logout
 ![POST Auth_Service](POSTRegister.png)
 ![POST Auth_Service](POSTLogin_Ulang.png)
+
+Request Refresh Token (POST /refresh) pada Auth Service
 ![POST Auth_Service](POSTRefresh_Token.png)
 
 Request Logout User (POST /logout) pada Auth Service
