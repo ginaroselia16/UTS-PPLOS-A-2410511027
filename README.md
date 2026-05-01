@@ -44,6 +44,7 @@ Menggunakan JWT (JSON Web Token)
 
 ## Testing
 Gunakan Postman 
+Request Registrasi User (POST /register) melalui API Gateway
 ![POST Auth_Service](POSTRegister.png)
 
 Request Login User (POST /login) melalui API Gateway
