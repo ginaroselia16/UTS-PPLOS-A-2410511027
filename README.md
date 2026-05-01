@@ -52,5 +52,32 @@ menambahkan refresh token dan logout
 ![POST Auth_Service](POSTRegister.png)
 ![POST Auth_Service](POSTLogin_Ulang.png)
 ![POST Auth_Service](POSTRefresh_Token.png)
+![POST Auth_Servis](POSTLogout.png)
+
+![POST Gateway](POSTRegister.png)
+
+Request Login User (POST /auth/login) melalui API Gateway
+![POST Gateway](POSTLogin.png)
+
+Request Penambahan Data Karyawan (POST /api/employees) pada Employee Service
+![POST Employee-service](POSTEmplote.png)
+
+Request Data Karyawan (GET /api/employees) pada Employee Service
+![GET Employee-service](Employe.png)
+
+Mengecek login di Auth Service lewat API Gateway
+![POST Auth_Service](LOGIN.png)
+
+Request Data Karyawan (GET /employees) melalui API Gateway
+![GET](Employees.png)
+
+Request Penambahan Data Karyawan (POST /employees) melalui API Gateway
+![POST](Employees.png)
+
+Request Perubahan Data Karyawan (PUT /employees/1) melalui API Gateway
+![PUT](Employees/1.png)
+
+Request Penghapusan Data Karyawan (DELETE /employees/1) melalui API Gateway
+![DELETE](Employees/1.png)
 ## Keterangan
 API Gateway digunakan sebagai single entry point untuk mengatur routing dan authentication ke setiap service.
