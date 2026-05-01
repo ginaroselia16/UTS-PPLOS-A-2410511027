@@ -43,7 +43,14 @@ Menggunakan JWT (JSON Web Token)
 - DELETE /employees/{id}  
 
 ## Testing
-Gunakan Postman (folder sudah disediakan)
+Gunakan Postman 
+![POST Auth_Service](POSTRegister.png)
+![POST Auth_Service](Login.png)
+![GET Auth_Service](GET.png)
 
+menambahkan refresh token dan logout
+![POST Auth_Service](POSTRegister.png)
+![POST Auth_Service](POSTLogin_Ulang.png)
+![POST Auth_Service](POSTRefresh_Token.png)
 ## Keterangan
 API Gateway digunakan sebagai single entry point untuk mengatur routing dan authentication ke setiap service.
