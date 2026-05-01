@@ -52,8 +52,11 @@ menambahkan refresh token dan logout
 ![POST Auth_Service](POSTRegister.png)
 ![POST Auth_Service](POSTLogin_Ulang.png)
 ![POST Auth_Service](POSTRefresh_Token.png)
+
+Request Logout User (POST /logout) pada Auth Service
 ![POST Auth_Servis](POSTLogout.png)
 
+Request Registrasi User (POST /auth/register) melalui API Gateway
 ![POST Gateway](POSTRegister.png)
 
 Request Login User (POST /auth/login) melalui API Gateway
