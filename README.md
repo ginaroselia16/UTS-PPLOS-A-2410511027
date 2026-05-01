@@ -48,7 +48,7 @@ Gunakan Postman
 ![POST Auth_Service](Login.png)
 ![GET Auth_Service](GET.png)
 
-menambahkan refresh token dan logout
+Request Registrasi User (POST /register) pada Auth Service
 ![POST Auth_Service](POSTRegister.png)
 
 Request Login User (POST /login) pada Auth Service
