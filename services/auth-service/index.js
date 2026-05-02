@@ -3,6 +3,7 @@ const express = require("express")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 const cors = require("cors")
+const axios = require("axios") // ⬅️ tambahan OAuth
 
 const app = express()
 app.use(express.json())
@@ -96,6 +97,44 @@ app.get("/protected", (req, res) => {
     if (err) return res.sendStatus(403)
     res.json({ message: "Akses berhasil", user })
   })
+})
+
+
+app.get("/github", (req, res) => {
+  const client_id = process.env.GITHUB_CLIENT_ID
+  const redirect_uri = "http://localhost:3001/github/callback"
+
+  res.redirect(
+    `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}`
+  )
+})
+
+app.get("/github/callback", async (req, res) => {
+  const code = req.query.code
+
+  try {
+    const response = await axios.post(
+      "https://github.com/login/oauth/access_token",
+      {
+        client_id: process.env.GITHUB_CLIENT_ID,
+        client_secret: process.env.GITHUB_CLIENT_SECRET,
+        code: code
+      },
+      {
+        headers: { Accept: "application/json" }
+      }
+    )
+
+    const accessToken = response.data.access_token
+
+    res.json({
+      message: "Login GitHub berhasil",
+      accessToken
+    })
+
+  } catch (err) {
+    res.status(500).json({ error: "OAuth gagal", detail: err.message })
+  }
 })
 
 app.listen(PORT, () => {

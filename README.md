@@ -5,6 +5,9 @@ Nama  : Gina Roselia
 NIM   : 2410511027  
 Kelas : A_Informatika
 
+## Laporan
+[PDF](<d:/SE GINA/UTS_PPLOS_A_GINA ROSELIA_2410511027.pdf>)
+
 ## Arsitektur
 - API Gateway (Node.js - Express)
 - Auth Service (JWT Authentication)
