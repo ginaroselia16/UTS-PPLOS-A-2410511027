@@ -94,8 +94,17 @@ Request Penghapusan Data Karyawan (DELETE /employees/1) melalui API Gateway
 ## Keterangan
 API Gateway digunakan sebagai single entry point untuk mengatur routing dan authentication ke setiap service.
 
+## Diagram Arsitektur
+![Arsitektur](docs/Arsitektur.png)
+
 ## OAuth (GitHub)
 Sistem juga mendukung login menggunakan GitHub OAuth.
 Endpoint:
 GET /github
 User akan diarahkan ke GitHub untuk login, kemudian mendapatkan access token.
+
+## Postman Collection
+postman/collection.json
+
+## Demo Video
+Link: 
