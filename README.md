@@ -5,9 +5,6 @@ Nama  : Gina Roselia
 NIM   : 2410511027  
 Kelas : A_Informatika
 
-## Laporan
-[PDF](<d:/SE GINA/UTS_PPLOS_A_GINA ROSELIA_2410511027.pdf>)
-
 ## Arsitektur
 - API Gateway (Node.js - Express)
 - Auth Service (JWT Authentication)
@@ -96,3 +93,9 @@ Request Penghapusan Data Karyawan (DELETE /employees/1) melalui API Gateway
 ![DELETE](Employees/1.png)
 ## Keterangan
 API Gateway digunakan sebagai single entry point untuk mengatur routing dan authentication ke setiap service.
+
+## OAuth (GitHub)
+Sistem juga mendukung login menggunakan GitHub OAuth.
+Endpoint:
+GET /github
+User akan diarahkan ke GitHub untuk login, kemudian mendapatkan access token.
