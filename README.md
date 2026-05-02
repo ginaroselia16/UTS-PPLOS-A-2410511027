@@ -88,5 +88,5 @@ User akan diarahkan ke GitHub untuk login, kemudian mendapatkan access token.
 
 ## Postman Collection
 postman/collection.json
-## Demo Video
+## Demo Video Youtube
 Link: https://youtu.be/3aGQE5su3Vs?si=gs6VoSyLttImBfcC 
